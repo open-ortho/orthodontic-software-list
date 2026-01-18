@@ -6,10 +6,10 @@ A list of medical software or devices which are designed to be used with orthodo
 
 This repository maintains a structured list of orthodontic software products, their features, and interoperability levels. Data is stored in human-readable YAML format, and the system generates:
 
-- **HTML Website**: A multipage site hosted on GitHub Pages for easy browsing.
+- **HTML Website**: A multipage, responsive site hosted on GitHub Pages for easy browsing, with custom CSS styling.
 - **MediaWiki File**: A single file ready for upload to Wikipedia.
 
-Each software entry is stored in its own file in the `_software/` directory.
+Each software entry is stored in its own file in the `_software/` directory. Templating uses Jinja2 for modularity (layouts, includes), similar to Jekyll but lightweight.
 
 ## Prerequisites
 

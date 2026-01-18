@@ -7,6 +7,13 @@ from jinja2 import Environment, FileSystemLoader
 # Setup Jinja2
 env = Environment(loader=FileSystemLoader('templates'))
 
+# Site context
+site_context = {
+    'site_title': 'Orthodontic Software List',
+    'site_description': 'A list of medical software or devices designed for orthodontic data, focusing on interoperability levels.',
+    'build_date': '2025-01-18'  # Update dynamically if needed
+}
+
 # Load software data
 software_list = []
 software_dir = '_software'
@@ -27,24 +34,30 @@ for filename in os.listdir(software_dir):
 # Sort by product name
 software_list.sort(key=lambda x: x['product'])
 
+# Render style.css
+template = env.get_template('style.css.j2')
+output = template.render(**site_context)
+os.makedirs('_site', exist_ok=True)
+with open('_site/style.css', 'w') as f:
+    f.write(output)
+
 # Render index.html
 template = env.get_template('index.html.j2')
-output = template.render(software_list=software_list)
-os.makedirs('_site', exist_ok=True)
+output = template.render(software_list=software_list, css_path="", **site_context)
 with open('_site/index.html', 'w') as f:
     f.write(output)
 
 # Render software pages
 template = env.get_template('software.html.j2')
 for software in software_list:
-    output = template.render(software=software)
+    output = template.render(software=software, css_path="../", **site_context)
     os.makedirs('_site/software', exist_ok=True)
     with open(f'_site/software/{software["filename"]}', 'w') as f:
         f.write(output)
 
 # Render wiki.wiki
 template = env.get_template('wiki.wiki.j2')
-output = template.render(software_list=software_list)
+output = template.render(software_list=software_list, **site_context)
 with open('wikipediaarticle.wiki', 'w') as f:
     f.write(output)
 

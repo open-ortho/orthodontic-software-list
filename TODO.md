@@ -24,6 +24,7 @@ Each software entry from the table will be in its own Markdown file with YAML fr
 - [x] Extract data from wiki table to YAML files
 - [x] Create build.py script for HTML and MediaWiki generation
 - [x] Set up Jinja2 templates for HTML and wiki
+- [x] Add custom CSS and Jinja layouts/includes for pretty pages
 - [x] Build and test outputs
 - [ ] Deploy HTML to GitHub Pages
 - [ ] Finalize wiki file for upload
