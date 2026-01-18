@@ -1,0 +1,18 @@
+{% extends "layout.html.j2" %}
+
+{% block title %}{{ site_title }} - Home{% endblock %}
+
+{% block content %}
+<h2>Software Products</h2>
+<p>{{ site_description }}</p>
+<div class="software-list">
+  {% for software in software_list %}
+  <div class="software-item">
+    <h3><a href="software/{{ software.filename }}">{{ software.product }}</a></h3>
+    <p>by {{ software.developer }}</p>
+    <p>{{ software.description }}</p>
+    <a href="software/{{ software.filename }}" class="btn">View Details</a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
