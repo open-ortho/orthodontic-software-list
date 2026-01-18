@@ -26,5 +26,5 @@ Each software entry from the table will be in its own Markdown file with YAML fr
 - [x] Set up Jinja2 templates for HTML and wiki
 - [x] Add custom CSS and Jinja layouts/includes for pretty pages
 - [x] Build and test outputs (wiki output to gitignored output/ folder)
-- [ ] Deploy HTML to GitHub Pages
+- [x] Create empty gh-pages branch for GitHub Pages deployment
 - [ ] Finalize wiki file for upload
