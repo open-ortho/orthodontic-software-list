@@ -75,7 +75,7 @@ python build.py
 
 ### Deploying
 
-- **GitHub Pages**: Push the `_site/` directory to the `gh-pages` branch or configure GitHub Actions for automatic deployment.
+- **GitHub Pages**: Automatic deployment via GitHub Actions (pushes to `gh-pages` branch on pushes to `main`).
 - **Wikipedia**: Upload `wikipediaarticle.wiki` to the relevant Wikipedia page.
 
 ## Project Structure
