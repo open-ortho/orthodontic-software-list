@@ -2,6 +2,10 @@
 
 A list of medical software or devices which are designed to be used with orthodontic data and collect or manipulate data that could be of interest to another software. This list focuses on the level of interoperability (the ability for the software to be able to connect with another software) that a specific software or device has.
 
+This information is temporarily parked on Github, until it becomes a wikipedia article, which all interested parties can directly modify and correct and keep updated.
+
+If you are vendor and find information on this repository to be unaccetable or incorrect, go ahead and submit a PR as described at the end of this document. We would like to ultimately publish this page on Wikipedia, s.t. vendors have direct access and can keep this up to date.
+
 ## Overview
 
 This repository maintains a structured list of orthodontic software products, their features, and interoperability levels. Data is stored in human-readable YAML format, and the system generates:
