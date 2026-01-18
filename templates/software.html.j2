@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ software.product }}</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <header>
+    <h1>{{ software.product }}</h1>
+    <p>by {{ software.developer }}</p>
+  </header>
+  <main>
+    <h2>Description</h2>
+    <p>{{ software.description }}</p>
+    <h2>DICOM Import</h2>
+    <ul>
+      <li>Filesystem: {{ software.dicom_import_filesystem }}</li>
+      <li>Network: {{ software.dicom_import_network }}</li>
+      <li>Bulk: {{ software.dicom_import_bulk }}</li>
+    </ul>
+    <h2>DICOM Export</h2>
+    <ul>
+      <li>Filesystem: {{ software.dicom_export_filesystem }}</li>
+      <li>Network: {{ software.dicom_export_network }}</li>
+      <li>Bulk: {{ software.dicom_export_bulk }}</li>
+    </ul>
+    <h2>Other</h2>
+    <ul>
+      <li>DICOM Conformance: {{ software.dicom_conformance }}</li>
+      <li>HL7/FHIR: {{ software.hl7_fhir }}</li>
+      <li>i14y Friendly: {{ software.i14y_friendly }}</li>
+      <li>Updated: {{ software.updated }}</li>
+      <li>Reference: {{ software.reference }}</li>
+    </ul>
+    <p><a href="../index.html">Back to list</a></p>
+  </main>
+  <footer>
+    <p>Generated from YAML data.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,455 @@
+{{AfC submission|t||ts=20221006234708|u=Antoniomagni|ns=118|demo=}}
+
+{{Short description|List of medical hardware and software}}
+
+This is a list of medical [[software]] or [[devices]] which are designed to be used with [[orthodontics|orthodontic]] data and collect or manipulate data that could be of interest to another software. This list focuses on the level of [[interoperability]] (the ability for the software to be able to connect with another software) that a specific software or device has.
+
+The intent of this list is to:
+
+# help doctors decide which platform would best suite their needs
+# help software vendors publicize their level or interest in interoperability
+
+==Orthodontic Software and their level of Interoperability==
+
+===Explanation of Columns===
+
+* '''Developer''': the company producing the software product (Q01)
+* '''Product''': the name of the software product (Q01)
+* '''Version''': version and release year (Q01)
+* '''Description''': Definition of the product as defined by the developer/producer
+* '''DICOM Import''' (Q11-Q14): Can the software ingest/import DICOM images?
+** '''Filesystem''' (Q12): Can read .dcm files, DICOMDIR
+** '''Network''' (Q13): Can read via DIMSE, WADO
+** '''Bulk''' (Q14): Can import entire database
+* '''DICOM Export''' (Q15-Q18): Can the software export/save/push DICOM images?
+** '''Filesystem''' (Q16): Can write .dcm files, DICOMDIR
+** '''Network''' (Q17): Can send via DIMSE, WADO
+** '''Bulk''' (Q18): Can export entire database
+* '''DICOM Conformance''' (Q19): Link to published DICOM conformance statement
+* '''HL7/FHIR Support''' (Q30-Q49): Level of HL7/FHIR implementation
+* '''i14y Friendly''': Willingness to collaborate on interoperability standards
+* '''Updated''': Last update date
+* '''Reference''' (Q02): Source of information
+
+{| class="wikitable sortable"
+|-
+! Developer
+! Product
+! Version
+! Description
+! colspan="3" | DICOM Import (Q11-Q14)
+! colspan="3" | DICOM Export (Q15-Q18)
+! DICOM Conformance (Q19)
+! HL7/FHIR
+! i14y Friendly
+! Updated
+! Reference
+|-
+! 
+! 
+! 
+! 
+! Filesystem<br/>(Q12)
+! Network<br/>(Q13)
+! Bulk<br/>(Q14)
+! Filesystem<br/>(Q16)
+! Network<br/>(Q17)
+! Bulk<br/>(Q18)
+! 
+! 
+! 
+! 
+! 
+|-
+[https://www.owandy.com/ Owandy Radiology inc]
+| I-MAX series
+| ?
+| Comprehensive range of 2D panoramic, cone beam, CBCT and cephalometric units
+| Probably Yes
+| Probably Yes
+| Unknown
+| Probably Yes
+| Probably Yes
+| Unknown
+| No statement found
+| Unknown
+| Unknown
+| 2022-05-24
+| UNVERIFIED
+|-
+[https://medoco.health medoco HEALTH]
+| Photarchi OPA
+| Archival of photographic dental and orthodontic images
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes (DIMSE)
+| Yes
+| Available
+| FHIR: Encounter, Appointments
+| Yes - Core business model
+| 2025-09-15
+| Company website
+| 
+|-
+DentalEyePad (Germany)
+| [https://dentaleyepad.de/en/ dentaleyepad]
+| ?
+| The first dental camera with dental "photo assistant"
+| No
+| No
+| No
+| Partial (In dev)
+| Partial (In dev)
+| No
+| No
+| None
+| Yes - Collaboration with medoco HEALTH
+| 2024-06-14
+| Company communication
+|-
+[[Align Technology]]
+| [https://itero.com/ iTero]
+| Intraoral surface scanner
+| No
+| No
+| No
+| No (only STL+XML via Case Manager)
+| No
+| No (one at a time only)
+| No
+| None
+| Partial - OK with GitHub tools
+| 2022-12-16
+| Email from tech support
+| 
+|-
+[[Carestream Health|Carestream Dental]]
+| [https://www.carestreamdental.com/en-us/csd-products/imaging-software/cs-imaging-v8/ CS Imaging]
+| 8
+| Dental imaging software with access to 2D/3D images and CAD/CAM data
+| Yes
+| Unknown
+| Unknown
+| Yes
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| 2022-10-01
+| UNVERIFIED
+|-
+[[Carestream Health|Carestream Dental]]
+| [https://www.carestreamdental.com/et/csd-products/practice-management-software/orthotrac/ OrthoTrac]
+| Orthodontic practice management software
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| 2022-10-01
+| UNVERIFIED
+| 
+|-
+?
+| [https://www.cephio.com Cephio]
+| ?
+| Simple and powerful program for Cephalometric Analysis
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| 2025-05-19
+| UNVERIFIED
+|-
+ORCA Dental AI Ltd.
+| [https://www.cephx.com CephX]
+| 4.02
+| Streamline workflow with automated Cephalometric analyses
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| 2024-06-14
+| UNVERIFIED
+|-
+Dolphin
+| [https://www.dolphinimaging.com/ Dolphin Imaging Plus]
+| ?
+| Effortlessly manage patient picture and x-ray images
+| Yes
+| Partial
+| Unknown
+| Yes
+| Partial
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| 2022-10-01
+| UNVERIFIED
+|-
+ZETA Manufacturing Company
+| [https://www.gripandshoot.com/dental Grip&Shoot Dental]
+| iOS iPhone Orthodontic Camera app with grip and Flash
+| No
+| No
+| No
+| No
+| No
+| No
+| No
+| None
+| Verbal interest expressed
+| 2024-11-19
+| Company communication
+| 
+|-
+[https://www.shofu.com Shofu]
+| [https://www.shofu.com/en/product/eyespecial/ Eye Special]
+| ?
+| Digital dental camera designed exclusively for dentistry
+| No
+| No
+| No
+| No
+| No
+| No
+| No
+| None
+| Unknown
+| 2022-05-24
+| Product documentation
+|-
+AssembleCircle Corp. (Korea)
+| [https://www.webceph.com WebCeph]
+| FDA 510k-cleared and KFDA approved A.I. driven Online Orthodontic Diagnostic Software
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| Unknown
+| 2024-06-14
+| UNVERIFIED
+| 
+|-
+[https://www.topsortho.com tops Software]
+| topsCephMate
+| Cephalometric Tracing
+| No
+| No
+| No
+| No
+| No
+| No
+| No
+| None
+| No
+| 2022-10-01
+| Product documentation
+| 
+|-
+[https://www.topsortho.com tops Software]
+| topsOrtho
+| Suite of practice tools into one easy-to-use platform
+| No
+| No
+| No
+| No
+| No
+| No
+| No
+| None
+| No
+| 2022-10-01
+| Product documentation
+| 
+|-
+|}
+
+== Questionnaire ==
+
+# The answers to the following questions to each vendor are used to populate the table above.
+# In order to make the information above verifiable, the source of each answer should contain a reference. If no reference is available, the reference column should state "Unverified".
+# If an interview was conducted to obtain, then ideally the interviewee should be willing to disclose their name or department, if a reference to a publication or website is not available.
+
+=== Q00 General ===
+
+Questions 01 - 09 are general questions.
+
+==== Q01 - What is the name of your software? ====
+
+* Company which developed it
+* Software product name
+* Software product version and release year
+
+==== Q02 - What is the reference or source of this information? ====
+
+* URL, citation, department name, person or whatever other information needed in order to verify this information.
+* Alternatively: UNVERIFIED
+
+=== Q10 DICOM ===
+
+Questions Q11 - Q29 are dedicated DICOM questions.
+
+==== Q11 - Is your software able to ingest or import images using the DICOM format? ====
+
+* Yes: The DICOM format is supported and recognized by the software
+* No: The DICOM format is not supported or recognized by the software
+* Partially: The DICOM format is only in part supported and recognized by the software (e.g.: reading only from filesystem, reading only from network, reading only limited metadata tags, ...)
+
+==== Q12 - Is your software able to ingest or import images using the DICOM format from the file system (.dcm files, DICOMDIR, ...) ? ====
+
+* Yes: the software is able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+* No: the software is not able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+
+==== Q13 - Is your software able to ingest or import images using the DICOM format from the network (DIMSE, WADO) ? ====
+
+* Yes: the software is able to read, ingest, import or otherwise work with images from the network in at least one of DICOM's supported formats (DIMSE, WADO, or other).
+* No: the software is not able to read, ingest, import or otherwise work with images from the network in at least one of DICOM's supported formats.
+
+==== Q14 - Is your software able to ingest or import images using the DICOM format in bulk? ====
+
+* Yes: the software is able to ingest or import an entire database of images (many patients, with many studies, series and images of vamny modalities each)
+* No: the software is not able to ingest or import an entire database of images (many patients, with many studies, series and images of vamny modalities each)
+* Partially: as yes above, but only for a single modality (Photos (VL), X-Rays (DX,CT,PX), ...) at once.
+
+==== Q15 - Is your software able to export, save or push images using the DICOM format? ====
+
+* Yes: The DICOM format is supported and recognized by the software
+* No: The DICOM format is not supported or recognized by the software
+* Partially: The DICOM format is only in part supported and recognized by the software (e.g.: reading only from filesystem, reading only from network, reading only limited metadata tags, ...)
+
+==== Q16 - Is your software able to export images using the DICOM format from the file system (.dcm files, DICOMDIR, ...) ? ====
+
+* Yes: the software is able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+* No: the software is not able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+
+==== Q17 - Is your software able to export images using the DICOM format from the network (DIMSE, WADO) ? ====
+
+* Yes: the software is able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+* No: the software is not able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+
+==== Q18 - Is your software able to export images using the DICOM format in bulk? ====
+
+* Yes: the software is able to ingest or import an entire database of images (many patients, with many studies, series and images of vamny modalities each)
+* No: the software is not able to ingest or import an entire database of images (many patients, with many studies, series and images of vamny modalities each)
+* Partially: as yes above, but only for a single modality (Photos (VL), X-Rays (DX,CT,PX), ...) at once.
+
+==== Q19 - Does your software have a published DICOM conformance statement? ====
+
+* Yes: add URL of DICOM Conformance Statement
+* No
+
+=== Q30 - HL7/FHIR (Q30-Q49) ===
+
+Question numbers Q31-Q49 are dedicated HL7/FHIR Questions.
+
+Add similar question as above, more relevant to HL7/FHIR
+
+== References ==
+<!-- Inline citations added to your article will automatically display here. See en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->
+{{reflist}}
+
+== Questionnaire ==
+
+# The answers to the following questions to each vendor are used to populate the table above.
+# In order to make the information above verifiable, the source of each answer should contain a reference. If no reference is available, the reference column should state "Unverified".
+# If an interview was conducted to obtain, then ideally the interviewee should be willing to disclose their name or department, if a reference to a publication or website is not available.
+
+=== Q00 General ===
+
+Questions 01 - 09 are general questions.
+
+==== Q01 - What is the name of your software? ====
+
+* Company which developed it
+* Software product name
+* Software product version and release year
+
+==== Q02 - What is the reference or source of this information? ====
+
+* URL, citation, department name, person or whatever other information needed in order to verify this information.
+* Alternatively: UNVERIFIED
+
+=== Q10 DICOM ===
+
+Questions Q11 - Q29 are dedicated DICOM questions.
+
+==== Q11 - Is your software able to ingest or import images using the DICOM format? ====
+
+* Yes: The DICOM format is supported and recognized by the software
+* No: The DICOM format is not supported or recognized by the software
+* Partially: The DICOM format is only in part supported and recognized by the software (e.g.: reading only from filesystem, reading only from network, reading only limited metadata tags, ...)
+
+==== Q12 - Is your software able to ingest or import images using the DICOM format from the file system (.dcm files, DICOMDIR, ...) ? ====
+
+* Yes: the software is able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+* No: the software is not able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+
+==== Q13 - Is your software able to ingest or import images using the DICOM format from the network (DIMSE, WADO) ? ====
+
+* Yes: the software is able to read, ingest, import or otherwise work with images from the network in at least one of DICOM's supported formats (DIMSE, WADO, or other).
+* No: the software is not able to read, ingest, import or otherwise work with images from the network in at least one of DICOM's supported formats.
+
+==== Q14 - Is your software able to ingest or import images using the DICOM format in bulk? ====
+
+* Yes: the software is able to ingest or import an entire database of images (many patients, with many studies, series and images of vamny modalities each)
+* No: the software is not able to ingest or import an entire database of images (many patients, with many studies, series and images of vamny modalities each)
+* Partially: as yes above, but only for a single modality (Photos (VL), X-Rays (DX,CT,PX), ...) at once.
+
+==== Q15 - Is your software able to export, save or push images using the DICOM format? ====
+
+* Yes: The DICOM format is supported and recognized by the software
+* No: The DICOM format is not supported or recognized by the software
+* Partially: The DICOM format is only in part supported and recognized by the software (e.g.: reading only from filesystem, reading only from network, reading only limited metadata tags, ...)
+
+==== Q16 - Is your software able to export images using the DICOM format from the file system (.dcm files, DICOMDIR, ...) ? ====
+
+* Yes: the software is able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+* No: the software is not able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+
+==== Q17 - Is your software able to export images using the DICOM format from the network (DIMSE, WADO) ? ====
+
+* Yes: the software is able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+* No: the software is not able to read, ingest, import or otherwise work with images from the filesystem in at least one of DICOM's supported formats.
+
+==== Q18 - Is your software able to export images using the DICOM format in bulk? ====
+
+* Yes: the software is able to ingest or import an entire database of images (many patients, with many studies, series and images of vamny modalities each)
+* No: the software is not able to ingest or import an entire database of images (many patients, with many studies, series and images of vamny modalities each)
+* Partially: as yes above, but only for a single modality (Photos (VL), X-Rays (DX,CT,PX), ...) at once.
+
+==== Q19 - Does your software have a published DICOM conformance statement? ====
+
+* Yes: add URL of DICOM Conformance Statement
+* No
+
+=== Q30 - HL7/FHIR (Q30-Q49) ===
+
+Question numbers Q31-Q49 are dedicated HL7/FHIR Questions.
+
+Add similar question as above, more relevant to HL7/FHIR
+
+== References ==
+<!-- Inline citations added to your article will automatically display here. See en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->

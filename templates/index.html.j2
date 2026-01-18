@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Orthodontic Software List</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <header>
+    <h1>Orthodontic Software List</h1>
+    <p>A list of orthodontic software and their interoperability levels.</p>
+  </header>
+  <main>
+    <h2>Software Products</h2>
+    <ul>
+    {% for software in software_list %}
+      <li><a href="software/{{ software.filename }}">{{ software.product }}</a> by {{ software.developer }}</li>
+    {% endfor %}
+    </ul>
+  </main>
+  <footer>
+    <p>Generated from YAML data.</p>
+  </footer>
+</body>
+</html>
