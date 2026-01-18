@@ -43,14 +43,14 @@ with open('_site/style.css', 'w') as f:
 
 # Render index.html
 template = env.get_template('index.html.j2')
-output = template.render(software_list=software_list, css_path="", **site_context)
+output = template.render(software_list=software_list, css_path="", index_path="", **site_context)
 with open('_site/index.html', 'w') as f:
     f.write(output)
 
 # Render software pages
 template = env.get_template('software.html.j2')
 for software in software_list:
-    output = template.render(software=software, css_path="../", **site_context)
+    output = template.render(software=software, css_path="../", index_path="../", **site_context)
     os.makedirs('_site/software', exist_ok=True)
     with open(f'_site/software/{software["filename"]}', 'w') as f:
         f.write(output)
