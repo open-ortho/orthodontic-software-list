@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
 
+# extract.rb
+# Script to extract software data from the original MediaWiki table in orthodontic-software-list.wiki
+# Parses the table rows and creates individual YAML frontmatter files in _software/ for each software entry.
+# Run: ruby extract.rb (from project root, assumes orthodontic-software-list.wiki in same dir)
+
 require 'yaml'
 
 # Read the wiki file

@@ -82,10 +82,11 @@ python build.py
 
 - `_software/`: YAML data files (one per software).
 - `templates/`: Jinja2 templates for HTML and Wiki generation.
+- `original_article/`: Original wiki page and extraction script (historical).
 - `build.py`: Main build script.
 - `shell.nix`: Nix environment configuration.
+- `output/`: Generated outputs (Wiki file, not committed).
 - `_site/`: Generated HTML site (not committed).
-- `wikipediaarticle.wiki`: Generated Wiki file.
 
 ## Contributing
 

@@ -58,7 +58,8 @@ for software in software_list:
 # Render wiki.wiki
 template = env.get_template('wiki.wiki.j2')
 output = template.render(software_list=software_list, **site_context)
-with open('wikipediaarticle.wiki', 'w') as f:
+os.makedirs('output', exist_ok=True)
+with open('output/wikipediaarticle.wiki', 'w') as f:
     f.write(output)
 
 print("Build complete!")

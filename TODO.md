@@ -21,10 +21,10 @@ Each software entry from the table will be in its own Markdown file with YAML fr
 - [x] Set up Nix shell (`shell.nix`)
 - [x] Switch to Python + Jinja2 build script
 - [x] Create `_software/` directory with YAML files
-- [x] Extract data from wiki table to YAML files
+- [x] Extract data from wiki table to YAML files (original files moved to original_article/)
 - [x] Create build.py script for HTML and MediaWiki generation
 - [x] Set up Jinja2 templates for HTML and wiki
 - [x] Add custom CSS and Jinja layouts/includes for pretty pages
-- [x] Build and test outputs
+- [x] Build and test outputs (wiki output to gitignored output/ folder)
 - [ ] Deploy HTML to GitHub Pages
 - [ ] Finalize wiki file for upload
